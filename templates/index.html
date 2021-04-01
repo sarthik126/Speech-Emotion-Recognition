@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Audio Emotion Recognition{% endblock %}
+
+{% block stylesheet %}
+ <link rel="stylesheet" href="static/css/style.css" defer>
+{% endblock stylesheet %}
+
+{% block content %}
+
+<nav class="navbar navbar-dark bg-dark nav1">
+  <span class="nav2 navbar-brand mb-0 h1">Speech Emotion Recognition</span>
+  <span><button type="button" class="btn btn-outline-primary btn-2">About</button></span>
+</nav>
+
+<div class="main-view">	
+
+</div>
+
+<div class="container">
+	<h3 class="heading">Audio Predicted Value</h3>
+	<div class="pred">
+		<div id="main-div">
+        	<p id='pred-value'>Audio Prediction Area</p>
+		</div>
+	</div>
+	<div class="btn-div start-div">
+	<button type="button" class="btn btn-primary btn-1" id="start">Start Prediction</button>
+	</div>
+	<div class="btn-div stop-div">
+	<button type="button" class="btn btn-danger btn-1" id="stop">Stop Prediction</button>
+	</div>
+</div>
+
+{% endblock %}
+
+{% block javascript %}
+
+<script type="text/javascript">
+	var start = document.getElementById('start')
+	var stop = document.getElementById('stop')
+
+	var timeout
+
+	function reload () {
+		$('#main-div').load('/loader/',function () {
+        console.log("running...")
+		});
+	}
+
+	start.addEventListener("click", function() {
+		document.querySelector('.start-div').style.display = 'none';
+		document.querySelector('.stop-div').style.display = 'block';
+		timeout  = setInterval(reload, 1000);
+		$('#main-div').load('/starter/',function () {
+        	console.log("running...")
+		});
+	});
+
+	stop.addEventListener("click", function() {
+		document.querySelector('.start-div').style.display = 'block';
+		document.querySelector('.stop-div').style.display = 'none';
+		clearInterval(timeout);
+		$('#main-div').load('/stop/',function () {
+        	console.log("stopped...")
+		});
+	});
+
+</script>
+
+{% endblock javascript %}

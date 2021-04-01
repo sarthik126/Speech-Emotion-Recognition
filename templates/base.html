@@ -1,0 +1,21 @@
+{% load static %}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Title{% endblock title %}</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" defer>
+    {% block stylesheet %}{% endblock stylesheet %}
+  </head>
+  <body>
+    <main>
+    {% block content %}
+    {% endblock content %}
+    </main>
+    <script src="static/js/JQuery.js" defer></script>
+    <script src="static/js/popper.min.js" defer></script>
+    <script src="static/js/bootstrap.min.js"vdefer></script>
+    {% block javascript %}
+    {% endblock javascript%}
+  </body>
+</html>
