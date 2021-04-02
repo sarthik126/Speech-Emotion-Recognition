@@ -1,6 +1,5 @@
 Django
 librosa
-soundfile
+SoundFile
 numpy
-sounddevice
 scipy
