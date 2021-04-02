@@ -51,7 +51,7 @@ class HandleThread(threading.Thread):
 		return x
 
 	def main_function(self):
-		filename="static/model1"
+		filename="static/model"
 		model=pickle.load(open(filename,"rb"))
 
 		fs = 16000
