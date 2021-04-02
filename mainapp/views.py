@@ -8,7 +8,6 @@ import librosa
 import soundfile
 import os, glob, pickle
 import numpy as np
-import sounddevice
 from scipy.io.wavfile import write
 
 flag = False
@@ -87,13 +86,6 @@ class HandleThread(threading.Thread):
 		print(th)
 		#print("thread working...",self.arg)
 
-'''class MainView(TemplateView):
-    template_name = 'index.html'
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['values'] = ValueTable.objects.all()
-        #HandleThread("helloo").start()
-        return context'''
 
 def main(request):
 	'''global flag
