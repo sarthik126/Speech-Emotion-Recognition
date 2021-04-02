@@ -3,3 +3,4 @@ librosa
 SoundFile
 numpy
 scipy
+sounddevice
