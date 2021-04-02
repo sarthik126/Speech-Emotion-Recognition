@@ -24,6 +24,6 @@ Note:
   5. Link for custom file and model creation project : https://github.com/sarthik126/Audio-and-Model-Maker
 
 Project Description:
-  1. This project is based o machine learning and used for continuous prediction of emotions from the audio extracted from the microphone.
+  1. This project is based on machine learning and used for continuous prediction of emotions from the audio extracted from the microphone.
   2. Accuracy can be increased using best model created using proper and more audios.
   
