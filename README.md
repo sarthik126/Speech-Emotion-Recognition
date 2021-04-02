@@ -25,4 +25,5 @@ Note:
 
 Project Description:
   This project is based o machine learning and used for continuous prediction of emotions from the audio extracted from the microphone.
+  Accuracy can be increased using best model created using proper and more audios.
   
