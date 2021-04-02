@@ -1,13 +1,7 @@
 from django.shortcuts import render
 from django.urls import reverse_lazy
 
-from .models import ValueTable
-from django.views.generic import TemplateView, View, DeleteView
-from django.core import serializers
-from django.http import JsonResponse
 import threading
-from django.http import HttpResponse
-import random
 from .models import ValueTable
 
 import librosa
