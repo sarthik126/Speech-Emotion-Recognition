@@ -1,0 +1,6 @@
+Django
+librosa
+soundfile
+numpy
+sounddevice
+scipy
