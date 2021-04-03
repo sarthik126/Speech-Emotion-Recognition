@@ -84,6 +84,7 @@ class HandleThread(threading.Thread):
 
 	def run(self):
 		th = self.main_function()
+		obj = ValueTable.objects.create(value1 = "None")
 		print(th)
 		#print("thread working...",self.arg)
 
