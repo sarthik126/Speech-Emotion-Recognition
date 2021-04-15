@@ -10,10 +10,10 @@ Requirements Installation:
 Running Project:
   1. Move to root folder of the project in the command prompt.
   2. Run the followig command :
-    1. python manage.py makemigrations.
-    2. python manage.py migrate.
-    3. python manage.py createsuperuser.
-    4. python manage.py runserver.
+    1. python manage.py makemigrations
+    2. python manage.py migrate
+    3. python manage.py createsuperuser
+    4. python manage.py runserver
   3. Open the browser and run server address.
 
 Note:
