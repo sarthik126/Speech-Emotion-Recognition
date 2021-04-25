@@ -6,6 +6,7 @@ Requirements Installation:
   1. Move to root folder of the project in the command prompt.
   2. Run the followig command : $ pip install -r requirements.txt
   3. All the project necessary libraries will be installed.
+  4. python version = 3.7+ (recommended)
 
 Running Project:
   1. Move to root folder of the project in the command prompt.
