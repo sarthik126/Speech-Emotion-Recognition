@@ -1,6 +1,6 @@
-Django
-librosa
-SoundFile
-numpy
-scipy
-sounddevice
+Django==3.2
+librosa==0.8.0
+numpy==1.20.2
+scipy==1.6.2
+sounddevice==0.4.1
+SoundFile==0.10.3.post1
